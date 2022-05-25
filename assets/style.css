@@ -1,0 +1,451 @@
+@import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@300;400&display=swap);
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.header {
+  background-color: #C83B53;
+  padding: 10px 0;
+}
+
+.header .brand {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .brand .brand__titulo {
+  font-family: "Kaushan Script", cursive;
+  color: white;
+  font-size: 4em;
+}
+
+.header .brand .search {
+  position: relative;
+}
+
+.header .brand .search .search__ico {
+  color: #8e8e8e;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.header .brand .search .search__input {
+  height: 40px;
+  text-indent: 10px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.header .brand .search .search__input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header .brand .search .search__input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  content: URL("https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg");
+  cursor: pointer;
+  width: 20px;
+  opacity: .3;
+}
+
+.header .nav {
+  font-family: "Open Sans", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.header .nav .nav__link {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+
+.header .nav .nav__link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.header .nav .nav__link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.container {
+  background-color: #FFF7B2;
+}
+
+.container .main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container .main .origem {
+  background-color: #fcffd6;
+  padding: 20px;
+}
+
+.container .main .origem .origem__bolo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-bottom: 10px;
+}
+
+.container .main .origem .origem__bolo .origem__bolo-img {
+  max-width: 300px;
+}
+
+.container .main .origem .origem__bolo .origem__bolo-link {
+  font-size: 13px;
+  text-decoration: none;
+  color: #deb887;
+}
+
+.container .main .origem .origem__bolo .origem__bolo-cont {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+  padding: 20px;
+}
+
+.container .main .origem .origem__bolo .origem__bolo-cont .origem__bolo-titulo {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #7A1C17;
+  margin-bottom: 10px;
+}
+
+.container .main .origem .origem__bolo .origem__bolo-cont .origem__bolo-texto {
+  margin-bottom: 1em;
+}
+
+.container .main .citacao {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: #d36166;
+  text-align: center;
+  padding: 10px;
+}
+
+.container .main .citacao .citacao__frase {
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+.container .main .receitas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+  background-color: #fcffd6;
+}
+
+.container .main .receitas .bolo-chocolate__titulo {
+  margin: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #7A1C17;
+}
+
+.container .main .receitas .bolo-chocolate__illustration-link {
+  font-size: 13px;
+  text-decoration: none;
+  color: #deb887;
+}
+
+.container .main .receitas .bolo-chocolate__cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  max-width: 920px;
+  padding-left: 20px;
+}
+
+.container .main .receitas .bolo-chocolate__illustration-img {
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.container .main .receitas .bolo-chocolate__texto {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+}
+
+.container .main .receitas .bolo-chocolate__texto .bolo-chocolate__texto-dest {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container .main .receitas .bolo-chocolate__texto .bolo-chocolate__texto-dest:nth-of-type(even) {
+  margin-top: 10px;
+}
+
+.container .main .receitas .bolo-chocolate__texto .bolo-chocolate__texto-list {
+  list-style: auto;
+  margin-left: 20px;
+}
+
+.container .main .receitas .bolos-relacionados {
+  font-family: "Open Sans", sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffe4c4;
+}
+
+.container .main .receitas .bolos-relacionados .bolos-relacionados__texto-dest {
+  color: #7A1C17;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.container .main .receitas .bolos-relacionados .bolos-relacionados__texto-list {
+  list-style: disc;
+  line-height: 1.8em;
+  margin-left: 25px;
+}
+
+.container .main .receitas .bolos-relacionados .bolos-relacionados__texto-list .bolos-relacionados__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.container .main .receitas .bolos-relacionados .bolos-relacionados__texto-list .bolos-relacionados__link:hover {
+  color: #C83B53;
+  text-decoration: underline;
+}
+
+.container .main .receitas .bolos-relacionados .bolos-relacionados__texto-list .bolos-relacionados__link-selection {
+  text-decoration: none;
+  color: #C83B53;
+  font-weight: 600;
+}
+
+.container .main .contato {
+  background-color: #fcffd6;
+  padding-bottom: 10px;
+}
+
+.container .main .contato .contato__header {
+  text-align: center;
+}
+
+.container .main .contato .contato__header .contato__header-divisor {
+  margin-bottom: 20px;
+}
+
+.container .main .contato .contato__header .contato__header-titulo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #7A1C17;
+}
+
+.container .main .contato .contato__form {
+  margin: 20px 50px;
+}
+
+.container .main .contato .contato__form .contato__form-label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margim-bottom: 10px;
+}
+
+.container .main .contato .contato__form .contato__form-input {
+  outline: none;
+  display: block;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  margin: 10px 0 20px 0;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-wieght: 400;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 20px;
+}
+
+.container .main .contato .contato__form .contato__form-input:focus {
+  border: 1px solid #ff7d83;
+  color: #333333;
+}
+
+.container .main .contato .contato__form .contato__form-button {
+  cursor: pointer;
+  padding: 8px 10px;
+  margin-right: 5px;
+  border: 1px solid #d9d9d9;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.container .main .contato .contato__form .contato__form-button:hover {
+  background: #dbdbdb;
+}
+
+.container .main .contato .contato__form .send {
+  background-color: #C83B53;
+  color: white;
+  width: 100px;
+}
+
+.container .main .contato .contato__form .send:hover {
+  background: #b63349;
+}
+
+.footer {
+  background-color: #7A1C17;
+  padding: 10px;
+}
+
+.footer .footer__cnt {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer__cnt .footer__redes-sociais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.footer .footer__cnt .footer__redes-sociais .footer__logos {
+  margin: 0 10px;
+  color: #ffe4c4;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.footer .footer__cnt .footer__redes-sociais .footer__logos:hover {
+  color: white;
+}
+
+.footer .footer__cnt .footer__copyright {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #ffe4c4;
+}
+/*# sourceMappingURL=style.css.map */

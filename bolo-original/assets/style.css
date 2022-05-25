@@ -1,0 +1,192 @@
+.body {
+  margin: 0;
+  background-color: #fcffd6;
+}
+
+.header {
+  background-color: #cf2b2b;
+  padding: 10px 0;
+}
+
+.header .nav {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header .nav .nav__link, .header .nav .nav__link:link, .header .nav .nav__link:visited, .header .nav .nav__link:active {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main .main__titulo {
+  text-align: center;
+}
+
+.main .origem-bolo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-bottom: 10px;
+}
+
+.main .origem-bolo .origem-bolo__img {
+  max-width: 300px;
+}
+
+.main .origem-bolo .origem-bolo__cont {
+  background-color: white;
+  padding: 30px;
+}
+
+.main .citacao {
+  color: white;
+  background-color: maroon;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.main .receitas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main .receitas .bolo-chocolate__cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  max-width: 920px;
+}
+
+.main .receitas .bolo-chocolate__cnt .bolo-chocolate__img {
+  max-width: 400px;
+  height: 300px;
+}
+
+.main .receitas .bolos-relacionados {
+  padding: 20px;
+  background-color: white;
+}
+
+.main .contato-form {
+  margin-bottom: 10px;
+}
+
+.main .contato-form .contato-form__titulo {
+  text-align: center;
+}
+
+.footer {
+  background-color: #3e3e3e;
+  padding: 10px;
+}
+
+.footer .footer__cnt {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__cnt .footer__redes-sociais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.footer .footer__cnt .footer__redes-sociais .footer__logos {
+  max-width: 50px;
+  margin: 0 10px;
+}
+
+.footer .footer__cnt .footer__copyright {
+  color: white;
+}
+
+@media (max-width: 785px) {
+  .main .origem-bolo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .main .origem-bolo .origem-bolo__img {
+    max-width: 100%;
+    height: auto;
+  }
+  .main .receitas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .main .receitas .bolo-chocolate__cnt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .main .receitas .bolo-chocolate__cnt .bolo-chocolate__img {
+    max-width: 100%;
+    height: auto;
+  }
+  .footer .footer__cnt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .footer .footer__cnt .footer__redes-sociais {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .footer__cnt .footer__copyright {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

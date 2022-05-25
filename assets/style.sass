@@ -1,0 +1,298 @@
+@import "reset";
+
+// Google Fonts
+@import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@300;400&display=swap);
+
+$indie-font: 'Kaushan Script', cursive
+$open-sans: 'Open Sans', sans-serif
+
+$color-white: white
+$color-brown: #7A1C17
+$color-pink: #C83B53
+$margin-bottom: 10px
+$max-width: 1200px
+
+.header
+   background-color: $color-pink
+   padding: 10px 0
+   
+   .brand
+       max-width: $max-width
+       margin: 40px auto
+       display: flex
+       flex-flow: row nowrap
+       justify-content: space-between
+       align-items: center
+       
+       .brand__titulo
+           font-family: $indie-font
+           color: $color-white
+           font-size: 4em
+       
+       .search
+           position: relative
+
+           .search__ico
+               color: #8e8e8e
+               position: absolute
+               top: 12px
+               right: 10px
+
+           .search__input
+               height: 40px
+               text-indent: 10px
+               background-color: #efefef
+               border: none
+               border-radius: 10px
+               width: 250px     
+               &:focus
+                   outline: none
+                   box-shadow: none                  
+               &::-webkit-search-cancel-button
+                    -webkit-appearance: none
+                    content: URL("https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg");
+                    cursor: pointer
+                    width: 20px
+                    opacity: .3
+
+   .nav
+       font-family: $open-sans
+       max-width: $max-width
+       margin: 0 auto
+       display: flex
+       flex-flow: row nowrap
+       justify-content: space-evenly
+       margin-bottom: $margin-bottom
+        
+       .nav__link
+           color: $color-white
+           text-decoration: none
+           letter-spacing: 0.15em
+           display: inline-block
+           padding: 10px
+           position: relative
+            
+       .nav__link:after
+           background: none repeat scroll 0 0 transparent
+           bottom: 0
+           content: ""
+           display: block
+           height: 2px
+           left: 50%
+           position: absolute
+           background: #fff
+           transition: width 0.3s ease 0s, left 0.3s ease 0s
+           width: 0
+            
+       .nav__link:hover:after
+           width: 100% 
+           left: 0
+    
+.container
+    background-color: #FFF7B2
+
+    .main
+        max-width: $max-width
+        margin: 0 auto
+
+        .origem
+            background-color: #fcffd6
+            padding: 20px
+
+            .origem__bolo 
+                display: flex
+                flex-flow: row nowrap
+                margin-bottom: $margin-bottom
+
+                .origem__bolo-img
+                    max-width: 300px
+
+                .origem__bolo-link
+                    font-size: 13px
+                    text-decoration: none
+                    color: #deb887
+
+                .origem__bolo-cont
+                    font-family: $open-sans
+                    line-height: 1.5em
+                    padding: 20px
+                        
+                    .origem__bolo-titulo
+                        font-size: 1.1em
+                        font-weight: 600
+                        color: $color-brown
+                        margin-bottom: $margin-bottom
+
+                    .origem__bolo-texto
+                        margin-bottom: 1em
+                
+        .citacao
+            font-family: $open-sans  
+            color: $color-white
+            background-color: #d36166
+            text-align: center
+            padding: 10px
+                
+            .citacao__frase
+                font-family: $indie-font
+                font-size: 1.1em
+                letter-spacing: 0.1em
+                line-height: 2em
+
+        .receitas
+            display: flex
+            flex-flow: row nowrap
+            justify-content: space-between
+            padding-bottom: 30px
+            background-color: #fcffd6
+                
+            .bolo-chocolate__titulo
+                margin: 20px
+                font-family: $open-sans
+                font-size: 1.5em
+                font-weight: 600
+                color: $color-brown
+                    
+            .bolo-chocolate__illustration-link
+                font-size: 13px
+                text-decoration: none
+                color: #deb887
+                
+            .bolo-chocolate__cnt
+                display: flex
+                flex-flow: row nowrap
+                max-width: 920px
+                padding-left: 20px
+                
+            .bolo-chocolate__illustration-img
+                max-width: 400px
+                margin-right: 20px
+                    
+            .bolo-chocolate__texto
+                font-family: $open-sans
+                line-height: 1.5em
+                
+                .bolo-chocolate__texto-dest
+                    font-weight: 600
+                    margin-bottom: $margin-bottom
+                    
+                .bolo-chocolate__texto-dest:nth-of-type(even)
+                    margin-top: 10px
+                    
+                .bolo-chocolate__texto-list
+                    list-style: auto
+                    margin-left: 20px
+
+            .bolos-relacionados
+                font-family: $open-sans
+                margin: 20px
+                padding: 20px
+                background-color: #ffe4c4
+                
+                .bolos-relacionados__texto-dest
+                    color: $color-brown
+                    font-style: italic
+                    font-weight: 600
+                    margin-bottom: 20px
+                    
+                .bolos-relacionados__texto-list
+                    list-style: disc
+                    line-height: 1.8em
+                    margin-left: 25px
+                    
+                    .bolos-relacionados__link
+                        color: #000
+                        text-decoration: none
+                        
+                    .bolos-relacionados__link:hover
+                        color: $color-pink 
+                        text-decoration: underline
+                        
+                    .bolos-relacionados__link-selection
+                        text-decoration: none
+                        color: $color-pink
+                        font-weight: 600
+
+        .contato
+            background-color: #fcffd6
+            padding-bottom: 10px
+
+            .contato__header
+                text-align: center
+                
+                .contato__header-divisor
+                    margin-bottom: 20px
+
+                .contato__header-titulo
+                    font-family: $open-sans
+                    font-size: 1.5em
+                    font-weight: 600
+                    color: $color-brown
+
+            .contato__form
+                margin: 20px 50px
+
+                .contato__form-label
+                    font-family: $open-sans
+                    font-size: 18px
+                    margim-bottom: 10px
+
+                .contato__form-input
+                    outline: none
+                    display: block
+                    width: 100%
+                    border: 1px solid #d9d9d9
+                    margin: 10px 0 20px 0
+                    padding: 10px 15px
+                    box-sizing: border-box
+                    font-wieght: 400
+                    transition: 0.3s ease 
+                    font-size: 20px              
+                    &:focus
+                        border: 1px solid #ff7d83
+                        color: #333333
+
+                .contato__form-button
+                    cursor: pointer
+                    padding: 8px 10px
+                    margin-right: 5px
+                    border: 1px solid #d9d9d9
+                    transition: 0.3s ease
+                    &:hover
+                        background: lighten(#8e8e8e, 30%)
+                
+                .contato__form-button 
+                .send
+                    background-color: $color-pink
+                    color: $color-white
+                    width: 100px
+                    &:hover
+                        background: darken($color-pink, 5%)
+
+.footer
+   background-color: $color-brown
+   padding: 10px
+   
+   .footer__cnt
+      max-width: 1140px
+      margin: 0 auto
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+      
+      .footer__redes-sociais
+          display: flex
+          flex-flow: row nowrap
+          
+          .footer__logos
+              margin: 0 10px
+              color: #ffe4c4
+              transition: 0.3s ease
+              &:hover
+                  color: $color-white        
+
+      .footer__copyright
+          font-family: $open-sans
+          font-size: 12px
+          color: #ffe4c4

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trabalho Prático - Bolo</title>
+
+   <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="body">
+   <header class="header" id="inicio">
+      <nav class="nav">
+         <a class="nav__link" href="#inicio">Início</a>
+         <a class="nav__link" href="#origem">A origem do bolo</a>
+         <a class="nav__link" href="#receita">Receita do bolo</a>
+         <a class="nav__link" href="#">Comentários</a>
+      </nav>
+   </header>
+   <main class="main">
+      <h1 class="main__titulo">Conheça o bolo</h1>
+      <section class="origem-bolo" id="origem">
+         <img class="origem-bolo__img" src="assets/images/bolo1.png" alt="imagem ilustrativa de um bolo">
+         <div class="origem-bolo__cont">
+            <h2 class="origem-bolo__titulo">A origem do bolo</h2>
+            <p class="origem-bolo__texto">
+               Acredita-se que a origem dos bolos tenha sido no Egito Antigo na forma de
+               pães adoçados com xarope de frutas, tâmaras e passas. Os gregos e romanos o
+               aperfeiçoaram onde eram oferecidos um preparado redondo de mel e pão, coberto
+               de velas acesas, que simbolizava a lua cheia, símbolo de Ártemis, deusa da
+               fertilidade, caça e maternidade. Porém a real diferença entre pães e bolos só veio a
+               ser caracterizada durante o Renascimento.
+            </p>
+         </div>
+      </section>
+      <section class="citacao">
+         <blockquote cite="https://citacoes.in/citacoes/1973351-elon-musk-criar-uma-empresa-e-como-fazer-um-bolo-voce-preci/">
+            <i>"Criar uma empresa é como fazer um bolo. Você precisa ter todos os ingredientes na proporção certa."</i><br> - Elon Musk
+         </blockquote>
+      </section>
+      <section class="receitas" id="receita">
+         <article class="bolo-chocolate">
+            <h2>Receita de Bolo de Chocolate</h2>
+            <div class="bolo-chocolate__cnt">
+               <img class="bolo-chocolate__img" src="assets/images/bolo2.png" alt="pedaço de um bolo de chocolate">
+               <div>
+                  <p>Igredientes</p>
+                  <ul>
+                     <li>4 ovos</li>
+                     <li>4 colheres (sopa) de chocolate em pó</li>
+                     <li>2 colheres (sopa) de manteiga</li>
+                     <li>3 xícaras (chá) de farinha de trigo</li>
+                     <li>2 xícaras (chá) de açúcar</li>
+                     <li>2 colheres (sopa) de fermento</li>
+                     <li>1 xícara (chá) de leite</li>
+                  </ul>
+                  <p>Modo de preparo</p>
+                  <ol>
+                     <li>Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos.</li>
+                     <li>Adicione o fermento e misture com uma espátula delicadamente.</li>
+                     <li>Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos.</li>
+                  </ol>
+               </div>
+            </div>
+         </article>
+         <aside class="bolos-relacionados">
+            <h2>Bolos relacionados</h2>
+            <ul>
+               <li><a href="#">Bolo de Coco</a></li>
+               <li><a href="#">Bolo de Morango</a></li>
+               <li><a href="#">Bolo de Milho</a></li>
+               <li><a href="#">Bolo de Prestígio</a></li>
+               <li><a href="#">Bolo de Floresta Negra</a></li>
+               <li><a href="#">Bolo de Ninho com Nutella</a></li>
+               <li><a href="#">Bolo de Baunilha</a></li>
+             </ul>
+         </aside>
+      </section>
+      <section class="contato-form" id="contato">
+         <h2 class="contato-form__titulo">Entre em contato</h2>
+         <form>
+            <div>
+               <label for="nome">Nome: </label>
+               <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+               <label for="sobrenome">Sobrenome: </label>
+               <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+            <div>
+               <label for="fone">Telefone: </label>
+               <input type="tel" name="fone" id="fone">
+            </div>
+            <div>
+               <label for="email">E-mail: </label>
+               <input type="email" name="email" id="email">
+            </div>
+            <div>
+               <label for="mensagem">Mensagem: </label>
+               <textarea name="mensagem" id="mensagem" cols="30" rows="1"></textarea>
+            </div>
+            <div>
+               <input type="submit" value="Enviar">
+               <input type="button" value="Não enviar">
+            </div>  
+         </form>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="footer__cnt">
+         <div class="footer__redes-sociais">
+            <a href="#"><img class="footer__logos" src="assets/images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img class="footer__logos" src="assets/images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img class="footer__logos" src="assets/images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img class="footer__logos" src="assets/images/wordpress.png" alt="Wordpress"></a>
+         </div>
+         <p class="footer__copyright"> Bolo 2022 @ Todos os direitos reservados</p>
+      </div>
+   </footer>
+</body>
+</html>

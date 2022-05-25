@@ -1,0 +1,125 @@
+// template da aplicação
+$color-white: white
+$margin-bottom: 10px
+   
+.body
+   margin: 0
+   background-color: rgb(252,255,214)
+
+.header
+   background-color: rgb(207,43,43)
+   padding: 10px 0
+
+   .nav
+      max-width: 1140px
+      margin: 0 auto
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-evenly
+   
+      .nav__link, .nav__link:link, .nav__link:visited, .nav__link:active  
+         color: $color-white
+         text-decoration: none
+
+.main
+   max-width: 1140px
+   margin: 0 auto
+
+   .main__titulo
+      text-align: center
+
+   .origem-bolo 
+      display: flex
+      flex-flow: row nowrap
+      margin-bottom: $margin-bottom
+
+      .origem-bolo__img
+         max-width: 300px
+
+      .origem-bolo__cont
+         background-color: $color-white
+         padding: 30px
+
+   .citacao
+      color: $color-white
+      background-color: rgb(128,0,0)
+      text-align: center
+      padding: 10px
+      margin-bottom: $margin-bottom
+
+   .receitas
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      margin-bottom: $margin-bottom
+
+      .bolo-chocolate__cnt
+         display: flex
+         flex-flow: row nowrap
+         max-width: 920px
+
+         .bolo-chocolate__img
+            max-width: 400px
+            height: 300px
+
+      .bolos-relacionados
+         padding: 20px
+         background-color: $color-white
+
+   .contato-form
+      margin-bottom: $margin-bottom
+
+      .contato-form__titulo
+         text-align: center
+
+.footer
+   background-color: #3e3e3e
+   padding: 10px
+
+   .footer__cnt
+      max-width: 1140px
+      margin: 0 auto
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+
+      .footer__redes-sociais
+         display: flex
+         flex-flow: row nowrap
+
+         .footer__logos
+            max-width: 50px
+            margin: 0 10px
+
+      .footer__copyright
+         color: $color-white
+
+
+@media (max-width: 785px)
+   .main
+      .origem-bolo 
+         flex-flow: column wrap
+
+         .origem-bolo__img
+            max-width: 100%
+            height: auto
+
+      .receitas
+         flex-flow: column wrap
+
+         .bolo-chocolate__cnt
+            flex-flow: column wrap
+
+            .bolo-chocolate__img
+               max-width: 100%
+               height: auto
+
+   .footer
+      .footer__cnt
+         flex-flow: column wrap
+
+         .footer__redes-sociais
+            justify-content: space-between
+
+         .footer__copyright
+            text-align: center
